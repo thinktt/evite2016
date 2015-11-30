@@ -1,9 +1,9 @@
 body {
-    /*background-image: url("christmas3.jpg");*/
-    -webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover; 
+    background-image: url("background1.jpg");
+    -webkit-background-size: auto;
+		-moz-background-size: auto;
+		-o-background-size: auto;
+		background-size: auto; 
     background-color: #000;
     color: white;
 
@@ -14,6 +14,10 @@ body {
 }
 
 .jumbotron {
-   background: rgb(200, 54, 54); /* This is for ie8 and below */
-   background: rgba(200, 54, 54, 0); 
+   background: rgb(0, 51, 0); /* This is for ie8 and below */
+   background: rgba(0, 51, 0, .75); 
+}
+
+h1 {
+  font-size: 24px;
 }

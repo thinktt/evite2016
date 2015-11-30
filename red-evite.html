@@ -5,27 +5,34 @@
 <head>
 <title>Red's Christmas Party RSVP</title>
 <link rel="stylesheet" type="text/css" href="boot-slate.min.css">
+<link rel="stylesheet" type="text/css" href="evite.css">
 </head>
 
 
 <body>
 
-
-
+<div class="top-buffer"></div>
+<div class="container">
+<div class="jumbotron">
 <div class="row">
-<div class="col-md-2"></div>
-<div class="col-md-8">
-<h1>Red's Christmas Party</h1>
-<h3>Please RSVP by 5th of December</h3>
+<!-- <div class="col-md-1"></div> -->
+<div class="col-md-12">
 	<form action="https://docs.google.com/forms/d/1k5spqYBIIIJu-iWWhLzLY4iKXhbQTuPUjmHL3lH7Hr0/formResponse" method="POST" onsubmit="">
 		
+		<div class="col-md-6">
+			<img class="img-responsive" src="christmas3.jpg">
+		</div>
+
+		<h1>Red's Christmas Party</h1>
+		<h3>Please RSVP by 5th of December</h3>
+
 		<div class="input-group col-md-6">
       <div class="input-group-addon">Name</div>
       	<input class="form-control" type="text" name="entry.511814402" value="" placeholder="Your name">
     </div>
   
 
-		<div class="form-group col-md-3">
+		<div class="form-group col-md-6">
 		<label><h4>I will be attending.</h4>
 		<input type="radio" name="entry.1279135015" value="Yes!">
 		<span>Yes!</span>
@@ -35,7 +42,7 @@
 		</label>
 		</div>
 
-		<div class="form-group col-md-3">
+		<div class="form-group col-md-6">
 		<label><h4>I'm bringing a partner.</h4>
 		<input type="radio" name="entry.1423415306" value="">
 		<span>No, just me</span>
@@ -45,14 +52,17 @@
 		</label>		
 		</div>
 
-		<div class="col-md-8">
+		<div class="col-md-6">
 			<input class="btn btn-info" type="submit" name="submit" value="Submit">
 		</div>
 	
 	</form>
 </div>
-<div class="col-md-2"></div>
+<!-- <div class="col-md-1"></div> -->
 </div>
+</div>
+</div>
+
 
 </body>
 </html>

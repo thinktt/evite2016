@@ -18,6 +18,6 @@ body {
    background: rgba(0, 51, 0, .75); 
 }
 
-h1 {
-  font-size: 24px;
+.main-title h1 {
+  font-family: 'Mountains of Christmas', cursive;
 }

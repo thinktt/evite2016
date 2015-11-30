@@ -1,3 +1,19 @@
+body {
+    /*background-image: url("christmas3.jpg");*/
+    -webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover; 
+    background-color: #000;
+    color: white;
+
+}
+
 .top-buffer { 
 	margin-top:40px; 
+}
+
+.jumbotron {
+   background: rgb(200, 54, 54); /* This is for ie8 and below */
+   background: rgba(200, 54, 54, 0); 
 }

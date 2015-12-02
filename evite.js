@@ -1,4 +1,8 @@
+
+ window.onbeforeunload = null; 
+
 $(document).ready( function(){
+  
   $.fn.snow();
   
   // capture submit
@@ -7,8 +11,18 @@ $(document).ready( function(){
     var data = $theForm.serializeArray();
     var response = data[2].value;
 
+    //hide the form
     $('.rsvp-area').addClass('hidden');
-    //hiding and unhiding here due to mixed use of
+
+    //clear the form
+    $theForm.find(
+      'input[type=text], ' +
+      'input[type=radio], ' +
+      'input[type=email] ' 
+    ).val("");
+    
+    //unhide the responses
+    //hiding and unhiding used here due to mixed use of
     //hide attribute with jquery and bootstrap hidden class 
     $('.response').hide().removeClass('hidden');
     

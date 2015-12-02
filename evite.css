@@ -68,7 +68,7 @@ input[type="color"]:focus,
   outline: 0 none;
 }
 
-.yes-response h3, .no-response h3 {
+.response-yes h3, .response-no h3 {
   font-family: 'Lora', serif; 
 }
 

@@ -72,6 +72,12 @@ input[type="color"]:focus,
   font-family: 'Lora', serif; 
 }
 
+.response-yes h4, .response-no h4 {
+  margin-bottom: 3px;
+  padding-bottom: 0px;
+  font-family: 'Lora', serif; 
+}
+
 /*.rsvp-area {
   visibility: hidden;
 }

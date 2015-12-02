@@ -1,7 +1,7 @@
 $(document).ready( function(){
   $.fn.snow();
   
-  // capture submit
+  /*// capture submit
 	$('form').submit(function() {
     var $theForm = $(this);
 
@@ -10,14 +10,18 @@ $(document).ready( function(){
 	      type: $theForm.attr('method'),
 	      url: $theForm.attr('action'),
 	      data: $theForm.serialize(),
-	      dataType: 'jsonp',
-	      success: function(data) {
-	      console.log('Yay! Form sent.');
-      }
+	      dataType: 'xml',
+        xhrFields: {
+            withCredentials: true
+        },
+        beforeSend: function (xhr) {
+          xhr.setRequestHeader('Access-Control-Allow-Origin', 'chrome-extension://EXTENSION_ID');
+          xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET, POST, PUT');
+        },
     });
 
   	// prevent submitting again
   	 return false;
-	});
-
+  });
+*/
 });

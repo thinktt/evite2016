@@ -4,6 +4,17 @@
 $(document).ready( function(){
   
   $.fn.snow();
+
+  $('form').bind('ajax:complete', function() {
+    var $theForm = $(this);
+
+     $theForm.find(
+      'input[type=text], ' +
+      'input[type=radio], ' +
+      'input[type=email] ' 
+    ).val("");
+
+   });
   
   // capture submit
 	$('form').submit(function() {
@@ -14,13 +25,7 @@ $(document).ready( function(){
     //hide the form
     $('.rsvp-area').addClass('hidden');
 
-    //clear the form
-    $theForm.find(
-      'input[type=text], ' +
-      'input[type=radio], ' +
-      'input[type=email] ' 
-    ).val("");
-    
+   
     //unhide the responses
     //hiding and unhiding used here due to mixed use of
     //hide attribute with jquery and bootstrap hidden class 

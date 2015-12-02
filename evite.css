@@ -6,8 +6,8 @@ body {
 		background-size: auto; 
     background-color: #000;
     color: white;
-
-}
+    font-family: 'Lora', serif 
+  }
 
 .top-buffer { 
 	margin-top:40px; 
@@ -21,3 +21,23 @@ body {
 .main-title h1 {
   font-family: 'Mountains of Christmas', cursive;
 }
+
+.main-title h5, h4 {
+  font-family: 'Lora', serif;
+}
+
+.option {
+   font-family: 'Lora', serif;
+   font-size: 150%
+ }
+
+ .option-title {
+   font-family: 'Lora', serif;
+   font-size: 150%
+ }
+
+
+ .form-group h4{
+  font-family: 'Lora', serif !important; 
+ }
+

@@ -10,6 +10,7 @@ $(document).ready( function(){
 	      type: $theForm.attr('method'),
 	      url: $theForm.attr('action'),
 	      data: $theForm.serialize(),
+	      dataType: 'jsonp',
 	      success: function(data) {
 	      console.log('Yay! Form sent.');
       }

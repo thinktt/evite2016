@@ -1,8 +1,38 @@
-
  window.onbeforeunload = null; 
 
 $(document).ready( function(){
+  var $slideshow = $('.slideshow img');
+  var nextSlide = 2; 
+  var slideInterval; 
   
+  slideInterval = setInterval(function() {
+    var slideSrc = './slideshow/'+ nextSlide + '.jpg'; 
+
+    $slideshow
+    .fadeOut(3000, function(){
+      $slideshow.attr('src' ,slideSrc);
+    })
+    .fadeIn(3000);
+
+    console.log(nextSlide);
+    
+    if (nextSlide === 6) {
+      clearInterval(slideInterval);
+      openEvite();
+    } else {
+      nextSlide++;
+    } 
+    
+  }, 3000);
+
+
+ 
+
+});
+
+
+function openEvite() {
+
   $.fn.snow();
 
   $('form').bind('ajax:complete', function() {
@@ -17,7 +47,7 @@ $(document).ready( function(){
    });
   
   // capture submit
-	$('form').submit(function() {
+  $('form').submit(function() {
     var $theForm = $(this);
     var data = $theForm.serializeArray();
     var response = data[2].value;
@@ -40,10 +70,4 @@ $(document).ready( function(){
     $('.response').fadeIn('slow');
         
   });
-
-});
-
-
-
-
-    
+}

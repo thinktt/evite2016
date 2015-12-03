@@ -1,12 +1,13 @@
 body {
-    background-image: url("background1.jpg");
+    /*background-image: url("background1.jpg");*/
     -webkit-background-size: auto;
 		-moz-background-size: auto;
 		-o-background-size: auto;
 		background-size: auto; 
     background-color: #000;
     color: white;
-    font-family: 'Lora', serif 
+    font-family: 'Lora', serif; 
+    /*opacity: 0 ;*/
   }
 
 .top-buffer { 
@@ -72,11 +73,11 @@ input[type="color"]:focus,
   font-family: 'Lora', serif; 
 }
 
-.response-yes h4, .response-no h4 {
-  margin-bottom: 3px;
-  padding-bottom: 0px;
-  font-family: 'Lora', serif; 
+.slideshow .jumbotron {
+   background: rgb(0, 0, 0); /* This is for ie8 and below */
+   background: rgba(0, 51, 0, 0); 
 }
+
 
 /*.rsvp-area {
   visibility: hidden;

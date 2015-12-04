@@ -4,21 +4,21 @@ var messages = [
  'hung <br> from the chimney with care and I’ve been yelled at on more than ' + 
  'one occasion for <br> watering the Christmas tree...',
 
- '<br> It has been an eventful year in my territory off Laurel Grove.  Here are'+
- ' a few memories we made along the way:',
+ '<br> It has been an eventful year in my territory off Laurel Grove.  Here are '+
+ ' a few memories we made along the way: ',
 
- '<br>Spending a few relaxing days at the lodge in Whistler...',
+ '<br>Spending a few relaxing days at the lodge in Whistler... ',
 
- '<br>Catching some rays on the pristine beaches of the Dominican Republic...',
+ '<br>Catching some rays on the pristine beaches of the Dominican Republic... ',
 
- '<br>My pack hiking the north shore of Oahu...',
+ '<br>My pack hiking the north shore of Oahu... ',
 
-  '<br>To cap the year off right, it would be my pleasure to personally invite' + 
-  'you to my den for a celebration on the night of December 19th.  Festivities' +  
-  'will start at 7 PM.  My humans will provide a pony keg of the finest holiday' +
-  'brew as well as hors d\'oeuvres.  Don\'t worry, I\'ve sampled them all and can' +  
-  'assure you they are delicious.  Please bring any liquor and mixers you would' + 
-  'like, as well as a chair.  Ice and cups will be provided.' 
+  '<br>To cap the year off right, it would be my pleasure to personally invite ' + 
+  'you to my den for a celebration on the night of December 19th.  Festivities ' +  
+  'will start at 7 PM.  My humans will provide a pony keg of the finest holiday ' +
+  'brew as well as hors d\'oeuvres.  Don\'t worry, I\'ve sampled them all and can ' +  
+  'assure you they are delicious.  Please bring any liquor and mixers you would ' + 
+  'like, as well as a chair.  Ice and cups will be provided. ' 
 
 ];
 

@@ -16,16 +16,21 @@ $(document).ready( function(){
 
 function startSlideShow() {
 
-  var $slideshow = $('.slideshow img');
+  var $slideshow = $('.slide');
+  var $slideImg = $('.slideshow img');
+  var $slideText = $('.slideshow p');
   var nextSlide = 2; 
   var slideSrc = './slideshow/'+ nextSlide + '.jpg';
   var i;  
 
   var switchSlide, fadeSlide;
 
+  slideText.html(m1);
+
   switchSlide = function() {
     slideSrc = './slideshow/'+ nextSlide + '.jpg'; 
-    $slideshow.attr('src' ,slideSrc);
+    console.log($slideText.html());
+    $slideImg.attr('src' ,slideSrc);
     nextSlide++;
   };
   

@@ -1,6 +1,27 @@
+var messages = [  
+ '<br>Dear friends of my humans,<br><br>' +
+ 'It seems the holiday season is upon us.  My paw-sized stocking has been ' +
+ 'hung <br> from the chimney with care and I’ve been yelled at on more than ' + 
+ 'one occasion for <br> watering the Christmas tree...',
+
+ '<br>Message 2',
+
+ '<br>Message 3',
+
+ '<br>Message 4',
+
+ '<br>Message 5',
+
+ '<br>Message 6'
+];
+
+
+
  window.onbeforeunload = null; 
 
 $(document).ready( function(){
+
+  var $slideText = $('.slideshow p').html(messages[0]);
 
   var audio = new Audio('joytoworld.mp3');
   audio.play();
@@ -25,12 +46,10 @@ function startSlideShow() {
 
   var switchSlide, fadeSlide;
 
-  slideText.html(m1);
-
   switchSlide = function() {
     slideSrc = './slideshow/'+ nextSlide + '.jpg'; 
-    console.log($slideText.html());
     $slideImg.attr('src' ,slideSrc);
+    $slideText.html(messages[nextSlide-1]);
     nextSlide++;
   };
   

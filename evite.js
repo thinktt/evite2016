@@ -1,37 +1,47 @@
  window.onbeforeunload = null; 
 
 $(document).ready( function(){
-  var $slideshow = $('.slideshow img');
-  var nextSlide = 2; 
-  var slideInterval; 
+
+   $('body').class('opacity', '0');
+
+  // var $slideshow = $('.slideshow img');
+  // var nextSlide = 2; 
+  // var slideSrc = './slideshow/'+ nextSlide + '.jpg';
+  // var i;  
+
+  // var switchSlide, fadeSlide;
+
+  // switchSlide = function() {
+  //   slideSrc = './slideshow/'+ nextSlide + '.jpg'; 
+  //   $slideshow.attr('src' ,slideSrc);
+  //   nextSlide++;
+  // };
   
-  slideInterval = setInterval(function() {
-    var slideSrc = './slideshow/'+ nextSlide + '.jpg'; 
+  // fadeSlide = function($slideShow) {
+  //   var next = $slideshow
+  //   .delay(5000)
+  //   .fadeOut(3000, function(){ switchSlide(); })
+  //   .fadeIn(3000);
+  //   return next;
+  // };
 
-    $slideshow
-    .fadeOut(3000, function(){
-      $slideshow.attr('src' ,slideSrc);
-    })
-    .fadeIn(3000);
+  // for(i = 0; i <= 4; i++) {
+  //   $slideshow = fadeSlide($slideshow);
+  // }
 
-    console.log(nextSlide);
-    
-    if (nextSlide === 6) {
-      clearInterval(slideInterval);
-      openEvite();
-    } else {
-      nextSlide++;
-    } 
-    
-  }, 3000);
-
-
- 
+  // $slideshow.delay(5000).fadeOut(3000, openEvite);
 
 });
 
 
 function openEvite() {
+
+  $('body').class('opacity', '0')
+  .css("background-image", "url(background1.jpg)")
+  // .fadeIn(3000, function() {
+  //   $('.main-container').show();
+  // });
+
 
   $.fn.snow();
 

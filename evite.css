@@ -11,12 +11,6 @@ body {
   opacity: 1 ;
 }
 
-#hiddenBody {
-  /*background-image: url("background1.jpg")*/
-
-}
-
-
 
 .top-buffer { 
 	margin-top:40px; 
@@ -83,12 +77,16 @@ input[type="color"]:focus,
 }
 
 .slideshow .jumbotron {
-   background: rgb(0, 0, 0); /* This is for ie8 and below */
-   background: rgba(0, 51, 0, 0); 
+/*   background: rgb(0, 0, 0);  This is for ie8 and below 
+   background: rgba(0, 51, 0, 0); */
+
 }
 
-
-/*.rsvp-area {
-  visibility: hidden;
+.slideshow .jumbotron .img-responsive { 
+  max-height: 750px;
 }
-*/
+
+.img-rounded {  
+  border-radius: 20px;  
+}  
+

@@ -2,6 +2,9 @@
 
 $(document).ready( function(){
 
+  var audio = new Audio('joytoworld.mp3');
+  audio.play();
+
   $('#hiddenBody').hide( 0, function(){
     $('.slideshow').fadeIn(3000, function(){
       startSlideShow();

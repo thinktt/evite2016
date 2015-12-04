@@ -4,17 +4,25 @@ var messages = [
  'hung <br> from the chimney with care and I’ve been yelled at on more than ' + 
  'one occasion for <br> watering the Christmas tree...',
 
- '<br>Message 2',
+ '<br> It has been an eventful year in my territory off Laurel Grove.  Here are'+
+ ' a few memories we made along the way:',
 
- '<br>Message 3',
+ '<br>Spending a few relaxing days at the lodge in Whistler...',
 
- '<br>Message 4',
+ '<br>Catching some rays on the pristine beaches of the Dominican Republic...',
 
- '<br>Message 5',
+ '<br>My pack hiking the north shore of Oahu...',
 
- '<br>Message 6'
+  '<br>To cap the year off right, it would be my pleasure to personally invite' + 
+  'you to my den for a celebration on the night of December 19th.  Festivities' +  
+  'will start at 7 PM.  My humans will provide a pony keg of the finest holiday' +
+  'brew as well as hors d\'oeuvres.  Don\'t worry, I\'ve sampled them all and can' +  
+  'assure you they are delicious.  Please bring any liquor and mixers you would' + 
+  'like, as well as a chair.  Ice and cups will be provided.' 
+
 ];
 
+slideDelays = [8000, 5000, 5000, 5000, 5000, 20000];
 
 
  window.onbeforeunload = null; 
@@ -54,8 +62,9 @@ function startSlideShow() {
   };
   
   fadeSlide = function($slideShow) {
+    console.log(nextSlide);
     var next = $slideshow
-    .delay(5000)
+    .delay(slideDelays.shift())
     .fadeOut(3000, function(){ switchSlide(); })
     .fadeIn(3000);
     return next;
@@ -65,7 +74,9 @@ function startSlideShow() {
     $slideshow = fadeSlide($slideshow);
   }
 
-  $slideshow.delay(5000).fadeOut(3000, function(){
+  
+  $slideshow.delay(slideDelays.shift())
+  .fadeOut(3000, function(){
     $('.slideshow').hide(0, function(){
       openEvite();
     });

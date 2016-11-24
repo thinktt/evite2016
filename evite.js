@@ -2,9 +2,13 @@
 //helps keep the form from holding the page up if you try to leave
 window.onbeforeunload = null; 
 
-$(document).ready(function(){
+// $(document).ready(function(){
+//   openEvite();
+// });
+
+$(window).load(function() {function(){
   openEvite();
-});
+}
 
 function openEvite() {
 

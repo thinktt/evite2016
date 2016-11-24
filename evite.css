@@ -11,14 +11,25 @@ body {
   opacity: 1 ;
 }
 
+.outer-fireplace {
+  zoom: .5;
+}
+
+.fireplace {
+  background-image: url("fire.gif");
+  background-repeat:no-repeat;
+  background-position: 50% 92%;
+  background-size: 63%;
+  /*padding:23px 14px 60px;*/
+}
 
 .top-buffer { 
 	margin-top:40px; 
 }
 
 .jumbotron {
-   background: rgb(0, 51, 0); /* This is for ie8 and below */
-   background: rgba(0, 51, 0, .75); 
+   background: rgb(0, 51, 25); /* This is for ie8 and below */
+   background: rgba(51, 20, 0, .60); 
    margin-top: 45px;
 }
 

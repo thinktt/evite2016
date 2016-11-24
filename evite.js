@@ -37,16 +37,18 @@ window.onbeforeunload = null;
 
 $(document).ready( function(){
 
-  var $slideText = $('.slideshow p').html(messages.shift());
+  //var $slideText = $('.slideshow p').html(messages.shift());
 
-  var audio = new Audio('joytoworld.mp3');
-  audio.play();
+  //var audio = new Audio('joytoworld.mp3');
+  //audio.play();
 
-  $('#hiddenBody').hide( 0, function(){
-    $('.slideshow').fadeIn(3000, function(){
-      startSlideShow();
-    });
-  });
+  // $('#hiddenBody').hide( 0, function(){
+  //   $('.slideshow').fadeIn(3000, function(){
+  //     startSlideShow();
+  //   });
+  // });
+
+  openEvite();
 
 });
 
@@ -101,10 +103,17 @@ function openEvite() {
   //hide everything bring in the background and bring it all back
   $('#hiddenBody').hide()
   .css("background-image", "url(background1.jpg)")
+  .css("background-size", "cover")
+  .css("background-repeat", "no-repeat")
+  .css("background-position", "center center")
   .fadeIn(3000);
+
+  var audio = new Audio('fireplace.mp3');
+  audio.volume = 0.1;
+  audio.play();
   
   //turn on the snow 
-  $.fn.snow();
+  //$.fn.snow();
 
   //when form has completed sending clear the form
   $('form').bind('ajax:complete', function() {

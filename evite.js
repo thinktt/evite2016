@@ -10,20 +10,41 @@ $(document).ready(function(){
 //   openEvite();
 // }
 
+
+function specialFadeIn($element) {
+  var opacity = 0.1;
+  var fadeInterval;
+  
+  fadeInterval = setInterval(function() {
+    console.log(opacity);
+    opacity += 0.05;
+    $element.css('opacity', opacity);
+    if(opacity >= 1) clearInterval(fadeInterval);
+  }, 90);
+
+}
+
+
 function openEvite() {
 
   //hide everything bring in the background and bring it all back
-  $('#hidden-body').hide()
-  //.css("background-image", "url(background1.jpg)")
-  .fadeIn(3000);
+  $('#hidden-body').hide().fadeIn(3000);
+
 
   var audio = new Audio('fireplace.mp3');
   audio.loop = true; 
   audio.volume = 0.1;
   audio.play();
-  
-  //turn on the snow 
-  //$.fn.snow();
+
+  $('#rsvp-btn').click(function() {
+    $('.formal-letter').hide();
+    
+    $('.main-title').removeClass('hidden').css('opacity', '0.05')
+    specialFadeIn($('.main-title'));
+    $('.rsvp-area').removeClass('hidden').css('opacity', '0.05')
+    specialFadeIn($('.rsvp-area'));
+
+  });
 
   //when form has completed sending clear the form
   $('form').bind('ajax:complete', function() {

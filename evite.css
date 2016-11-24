@@ -37,6 +37,11 @@ body {
   font-family: 'Mountains of Christmas', cursive;
 }
 
+.formal-letter p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+
 .main-title h5, h4 {
   font-family: 'Lora', serif;
 }
@@ -122,3 +127,19 @@ input[type="color"]:focus,
   background-position: center center;
 }
 
+.img-responsive {
+    margin: auto;
+}
+
+.spacer {
+  height: 30px;
+}
+
+/*@media (min-width: 768px) {
+.container {
+  width: auto;
+}*/
+
+.main-form {
+  zoom: .91;
+}

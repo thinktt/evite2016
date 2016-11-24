@@ -10,8 +10,8 @@
 <link rel="icon" type="image/x-icon" href="favicon.ico" />
 <link href='https://fonts.googleapis.com/css?family=Mountains+of+Christmas' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
-<script src="jquery.snow.min.js"></script>
 <script src="evite.js"></script>
 </head>
 
@@ -19,7 +19,7 @@
 <body>
 
 <div id="hidden-body">
-<div class="container main-container">
+<div class="container main-container overide-me">
 <div class="jumbotron">
 <div class="row box">
 	<div class="col-md-12">
@@ -28,11 +28,25 @@
 			<img class="img-responsive fireplace" src="red-fire.png">
 		</div>
 
-		<iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>
-		<form class='col-md-6' action="https://docs.google.com/forms/d/1k5spqYBIIIJu-iWWhLzLY4iKXhbQTuPUjmHL3lH7Hr0/formResponse" 
+		<div class="formal-letter col-md-6" >
+			<div class="spacer"></div>
+			<p>Dear friends of high distinction,<p>
+
+			<p>I hope this letter finds you in good health and prosperity. I write you from Laurel Grove Manor in this year of our Lord 2016 to invite you to my annual Christmas celebration. This year I have decided we will all wear ugly sweaters and pretend we're like the dirty peasants! Won't that be fun. </p>
+			
+			<p>Please RSVP at your earliest convenience, but no later than December 14th.</p>
+
+			<p>Sincerely yours,  <br> Lord Red Hawkins</b></p>
+
+			<input class="btn btn-success btn-lg" id="rsvp-btn" type="submit" name="submit" value="RSVP">
+
+		</div>
+
+		<form class='col-md-6 main-form' action="https://docs.google.com/forms/d/1k5spqYBIIIJu-iWWhLzLY4iKXhbQTuPUjmHL3lH7Hr0/formResponse" 
 			method="POST" target="dummyframe">
-		
-			<div class="main-title">
+			
+
+			<div class="main-title hidden">
 				<h1>Red's Ugly Sweater Christmas Party!</h1>
 				<h5> 7:00 PM <br>
 				Saturday December 17th 2016<br>
@@ -40,7 +54,7 @@
 				Austin TX, 78758</h5>
 			</div>
 
-			<div class="rsvp-area">
+			<div class="rsvp-area hidden">
 			<h4>Please RSVP by 14th of December</h4>
 			
 			<div class="input-group col-md-12">
@@ -68,7 +82,7 @@
 			</div>
 
 
-			<div class="form-group col-md-12">
+			<div class="form-group col-md-6">
 			<span class="option-title">I'm bringing a partner. </span><br>
 			<label>
 				<input type="radio" name="entry.1423415306" value="Yes">
@@ -123,5 +137,6 @@
 </div>
 </div>
 
+<!-- <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe> -->
 </body>
 </html>

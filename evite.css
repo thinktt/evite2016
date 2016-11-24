@@ -11,9 +11,6 @@ body {
   opacity: 1 ;
 }
 
-.outer-fireplace {
-  zoom: .5;
-}
 
 .fireplace {
   background-image: url("fire.gif");
@@ -28,9 +25,9 @@ body {
 }
 
 .jumbotron {
-   background: rgb(0, 51, 25); /* This is for ie8 and below */
-   background: rgba(51, 20, 0, .60); 
-   margin-top: 45px;
+  background: rgb(0, 51, 25); /* This is for ie8 and below */
+  background: rgba(51, 20, 0, .60); 
+  margin-top: 45px;
 }
 
 .main-title h1 {
@@ -100,4 +97,12 @@ input[type="color"]:focus,
 .img-rounded {  
   border-radius: 20px;  
 }  
+
+#hidden-body {
+  /*zoom: 90%;*/
+  background-image: url("background1.jpg");
+  background-size: cover);
+  background-repeat: repeat-y;
+  background-position: center center;
+}
 

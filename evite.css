@@ -11,12 +11,15 @@ body {
   opacity: 1 ;
 }
 
+.outer-fireplace {
+  zoom: .5;
+}
 
 .fireplace {
   background-image: url("fire.gif");
   background-repeat:no-repeat;
   background-position: 50% 92%;
-  background-size: 63%;
+  background-size: 67%;
   /*padding:23px 14px 60px;*/
 }
 
@@ -25,7 +28,7 @@ body {
 }
 
 .jumbotron {
-  background: rgb(0, 51, 25); /* This is for ie8 and below */
+  background: rgb(51, 51, 0); /* This is for ie8 and below */
   background: rgba(51, 20, 0, .60); 
   margin-top: 45px;
 }
@@ -53,11 +56,24 @@ body {
   font-family: 'Lora', serif !important; 
  }
 
-.input-group-addon {
+/*.input-group-addon {
   color: #fff;
   background-color: #43ac6a;
   border-color:  #43ac6a;
+}*/
+
+.input-group-addon {
+  color: #fff;
+  background-color: rgb(31, 111, 21);
+  border-color: rgb(31, 111, 21);
 }
+
+.btn-success {
+  color: #ffffff;
+  background-color: rgb(31, 111, 21);
+  border-color: rgb(31, 111, 21);
+}
+
 
 textarea:focus,
 input[type="text"]:focus,
@@ -99,7 +115,7 @@ input[type="color"]:focus,
 }  
 
 #hidden-body {
-  /*zoom: 90%;*/
+  zoom: 90%;
   background-image: url("background1.jpg");
   background-size: cover);
   background-repeat: repeat-y;

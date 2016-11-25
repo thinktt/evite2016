@@ -33,7 +33,7 @@ function openEvite() {
 
   var audio = new Audio('fireplace.mp3');
   audio.loop = true; 
-  audio.volume = 0.1;
+  audio.volume = 0.04;
   audio.play();
 
   $('#rsvp-btn').click(function() {

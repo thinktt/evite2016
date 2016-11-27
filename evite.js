@@ -39,9 +39,9 @@ function openEvite() {
   $('#rsvp-btn').click(function() {
     $('.formal-letter').hide();
     
-    $('.main-title').removeClass('hidden').css('opacity', '0.05')
+    $('.main-title').removeClass('hidden').css('opacity', '0.05');
+    $('.rsvp-area').removeClass('hidden').css('opacity', '0.05');
     specialFadeIn($('.main-title'));
-    $('.rsvp-area').removeClass('hidden').css('opacity', '0.05')
     specialFadeIn($('.rsvp-area'));
 
   });

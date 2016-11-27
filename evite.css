@@ -40,6 +40,7 @@ body {
 .formal-letter p {
   font-family: 'Dancing Script', cursive;
   font-size: 30px;
+  line-height: 39px;
 }
 
 .main-title h5, h4 {
@@ -132,7 +133,7 @@ input[type="color"]:focus,
 }
 
 .spacer {
-  height: 30px;
+  height: 10px;
 }
 
 /*@media (min-width: 768px) {
@@ -141,5 +142,5 @@ input[type="color"]:focus,
 }*/
 
 .main-form {
-  zoom: .91;
+  /*zoom: .95;*/
 }
